@@ -1,0 +1,146 @@
+/* Base body styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #181C14 0%, #3C3D37 100%); /* Gradient background using black and dark grey */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container styling */
+.container {
+    background-color: #ECDFCC; /* Light background for the content area (box containing options) */
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Darker shadow for depth */
+    padding: 2rem;
+    width: 100%;
+    max-width: 900px;
+}
+
+/* Main heading styles */
+h1 {
+    color: #697565; /* Muted olive for the heading to keep it soft but readable */
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+/* Bold strong text inside heading */
+h1 strong {
+    font-weight: 700;
+}
+
+/* Flex container for the main content sections */
+.content {
+    display: flex;
+    gap: 1.5rem;
+}
+
+/* Common box styling for both animal and file upload sections */
+.box {
+    background-color: #ECDFCC; /* Light color for the boxes to contrast the dark background */
+    border-radius: 15px;
+    padding: 1.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+    transition: transform 0.3s ease;
+    flex: 1;
+}
+
+/* Hover effect for boxes */
+.box:hover {
+    transform: translateY(-5px);
+}
+
+/* Styling for h2 titles inside each section */
+.box h2 {
+    color: #3C3D37; /* Dark grey for title text inside the boxes */
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+/* Dropdown selector for animal options */
+.animal-select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #697565; /* Muted olive border */
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: #3C3D37; /* Dark grey text for the dropdown */
+    background-color: #ECDFCC; /* Light background for contrast */
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Focus effect on the dropdown selector */
+.animal-select:focus {
+    outline: none;
+    border-color: #697565; /* Subtle olive color on focus */
+    box-shadow: 0 0 0 2px rgba(105, 117, 101, 0.3); /* Soft glow for focus */
+}
+
+/* Hidden input for file selection */
+input[type="file"] {
+    display: none;
+}
+
+/* Button to trigger file upload */
+.file-upload-btn {
+    background-color: #3C3D37; /* Dark grey for the button */
+    color: #ECDFCC; /* Light beige text for the button */
+    padding: 0.8rem 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    transition: background-color 0.3s, transform 0.3s;
+    font-weight: 500;
+}
+
+/* Hover effect for the file upload button */
+.file-upload-btn:hover {
+    background-color: #181C14; /* Darker shade for hover */
+    transform: translateY(-2px);
+}
+
+/* Image container for displaying selected animal */
+.image-container {
+    width: 100%;
+    height: 200px;
+    background-color: #ECDFCC; /* Light background for image visibility */
+    border-radius: 10px;
+    margin-top: 1rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling for the image inside the container */
+#animalImage {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+/* File info section */
+.file-info {
+    margin-top: 1rem;
+    font-weight: 300;
+    line-height: 1.6;
+    color: #3C3D37; /* Dark grey for the file info */
+}
+
+/* Individual file info paragraphs */
+.file-info p {
+    margin: 0.5rem 0;
+}
+
+/* Strong text inside the file info section */
+.file-info strong {
+    font-weight: 600;
+    color: #181C14; /* Black-green for stronger text */
+}
